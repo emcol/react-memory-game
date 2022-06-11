@@ -1,86 +1,46 @@
 export const heroes = [
     {
-        hero: 'Pino',
+        name: 'Pino',
         src: ''
     },
     {
-        hero: 'Giulia',
+        name: 'Giulia',
         src: ''
     },
     {
-        hero: 'Pino',
+        name: 'Emanuele',
         src: ''
     },
     {
-        hero: 'Miriam',
+        name: 'Miriam',
         src: ''
     },
     {
-        hero: 'Simone',
+        name: 'Simone',
         src: ''
     },
     {
-        hero: 'Federica',
+        name: 'Federica',
         src: ''
     },
     {
-        hero: 'Giovanni',
+        name: 'Giovanni',
         src: ''
     },
     {
-        hero: 'Emiliano',
+        name: 'Emiliano',
         src: ''
     },
     {
-        hero: 'Emiliano',
+        name: 'Francesca',
         src: ''
     },
     {
-        hero: 'Emiliano',
+        name: 'Sari',
         src: ''
     },
     {
-        hero: 'Emiliano',
+        name: 'Valeria',
         src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
-    {
-        hero: 'Emiliano',
-        src: ''
-    },
+    }
 ];

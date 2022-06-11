@@ -2,37 +2,38 @@ import React, {useState} from 'react';
 import {Game} from './Components/Game';
 import { PickYourCards } from './Components/PickYourCards';
 import { Header } from './Components/Header';
+import './App.scss';
 
 function App() {
-  const [appState, setAppState] = useState({
-    gameState: 0,
-    cards: [],
-    player: null
-  });
+  const [gameState, setGameState] = useState(0);
+  const [user, setUser] =  useState('');
+  const [playingCards, setPlayingCards] = useState([]);
 
   //imposta il nome del giocatore nello stato dell'app
-  const setUser = player => setAppState(prevAppState => {
-    const newAppState = {...prevAppState};
-    newAppState.player = player;
-    return newAppState;
-  });
-  //lo stato del gioco passa al livello successivo
-  const changeGameState = () => setAppState(prevAppState => {
-    const newAppState = {...prevAppState};
-    newAppState.gameState++;
-    return newAppState;
-  });
-  
-  return (
-    <main>
-      <Header
-        onSubmit_user={setUser}
-        onSubmit_game={changeGameState}
-        player={appState.player} 
-        gameState={appState.gameState} />
+  const handleUserChange = user => setUser(user);
 
-        {appState.gameState === 2 && (<PickYourCards/>)}
-        {appState.gameState === 1 && (<Game/>)}
+  //lo stato del gioco passa al livello successivo
+  const handleChangeGameState = () => setGameState(prevGameState => prevGameState + 1);
+  
+  const handleChoosingClick = chosenCard => {
+    setPlayingCards(prevPlayingCards => [
+      ...prevPlayingCards,
+      chosenCard
+    ]);
+  };
+
+  return (
+    <main className='App'>
+      <Header
+        handleUserChange={handleUserChange}
+        onNextSubmit={handleChangeGameState}
+        user={user}
+        game={gameState} />
+
+      <div className='gameContainer'>
+        {gameState === 1 && (<PickYourCards onNextSubmit={handleChangeGameState} onCardClick={handleChoosingClick} playingCards={playingCards}/>)}
+        {gameState === 2 && (<Game/>)}
+      </div>
 
     </main>
   );

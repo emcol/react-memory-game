@@ -1,26 +1,32 @@
 import React from "react";
 import { StartGamePage } from "./StartGamePage";
+import './Header.scss';
 
-export const Header = ({onSubmit_user, onSubmit_game, player, gameState}) => {
-    if(gameState === 0) {
+export const Header = ({handleUserChange, onNextSubmit, user, game}) => {
+
+    const handleGameSubmit = () => {
+        onNextSubmit();
+    };
+
+    if(game === 0) {
         return (
-            <header>
+            <header className="Header">
                 <h1>Benvenuto al Gioco del Memory</h1>
                 <h2>Con i personaggi del gruppo di disagiati di merda</h2>
-                <StartGamePage onSubmit_user={onSubmit_user} onSubmit_game={onSubmit_game} />
+                <StartGamePage onUserChange={handleUserChange} onSubmit_game={handleGameSubmit} />
             </header>
         );
-    } else if(gameState === 1) {
+    } else if(game === 1) {
         return (
-            <header>
-                <h1>Ciao {player}!</h1>
+            <header className="Header">
+                <h1>Ciao {user}!</h1>
                 <p>Prima di giocare, scegli i tuoi personaggi:</p>
             </header>
         );
-    } else if(gameState === 2) {
+    } else if(game === 2) {
         return (
-            <header>
-                <h1>Giocatore: {player}</h1>
+            <header className="Header">
+                <h1>Giocatore: {user}</h1>
             </header>
         );
     }

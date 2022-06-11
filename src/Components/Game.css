@@ -10,8 +10,7 @@
    
 }
   
-#item-0 {
-
+#card-0 {
    grid-row-start: 1;
    grid-column-start: 1;
 
@@ -19,8 +18,7 @@
    grid-column-end: 2;
    
 }
-#item-1 {
-
+#card-1 {
    grid-row-start: 1;
    grid-column-start: 2;
 
@@ -28,8 +26,7 @@
    grid-column-end: 3;
    
 }
-#item-2 {
-
+#card-2 {
    grid-row-start: 1;
    grid-column-start: 3;
 
@@ -37,8 +34,7 @@
    grid-column-end: 4;
    
 }
-#item-3 {
-
+#card-3 {
    grid-row-start: 1;
    grid-column-start: 4;
 
@@ -46,8 +42,7 @@
    grid-column-end: 5;
    
 }
-#item-4 {
-
+#card-4 {
    grid-row-start: 1;
    grid-column-start: 5;
 
@@ -55,8 +50,7 @@
    grid-column-end: 6;
    
 }
-#item-5 {
-
+#card-5 {
    grid-row-start: 2;
    grid-column-start: 5;
 
@@ -64,8 +58,7 @@
    grid-column-end: 6;
    
 }
-#item-6 {
-
+#card-6 {
    grid-row-start: 2;
    grid-column-start: 4;
 
@@ -73,8 +66,7 @@
    grid-column-end: 5;
    
 }
-#item-7 {
-
+#card-7 {
    grid-row-start: 2;
    grid-column-start: 3;
 
@@ -82,8 +74,7 @@
    grid-column-end: 4;
    
 }
-#item-8 {
-
+#card-8 {
    grid-row-start: 2;
    grid-column-start: 2;
 
@@ -91,8 +82,7 @@
    grid-column-end: 3;
    
 }
-#item-9 {
-
+#card-9 {
    grid-row-start: 2;
    grid-column-start: 1;
 
@@ -100,8 +90,7 @@
    grid-column-end: 2;
    
 }
-#item-10 {
-
+#card-10 {
    grid-row-start: 3;
    grid-column-start: 1;
 
@@ -109,8 +98,7 @@
    grid-column-end: 2;
    
 }
-#item-11 {
-
+#card-11 {
    grid-row-start: 3;
    grid-column-start: 2;
 
@@ -118,8 +106,7 @@
    grid-column-end: 3;
    
 }
-#item-12 {
-
+#card-12 {
    grid-row-start: 3;
    grid-column-start: 3;
 
@@ -127,8 +114,7 @@
    grid-column-end: 4;
    
 }
-#item-13 {
-
+#card-13 {
    grid-row-start: 3;
    grid-column-start: 4;
 
@@ -136,8 +122,7 @@
    grid-column-end: 5;
    
 }
-#item-14 {
-
+#card-14 {
    grid-row-start: 3;
    grid-column-start: 5;
 
@@ -145,8 +130,7 @@
    grid-column-end: 6;
    
 }
-#item-15 {
-
+#card-15 {
    grid-row-start: 4;
    grid-column-start: 1;
 
@@ -154,8 +138,7 @@
    grid-column-end: 2;
    
 }
-#item-16 {
-
+#card-16 {
    grid-row-start: 4;
    grid-column-start: 2;
 
@@ -163,8 +146,7 @@
    grid-column-end: 3;
    
 }
-#item-17 {
-
+#card-17 {
    grid-row-start: 4;
    grid-column-start: 3;
 
@@ -172,8 +154,7 @@
    grid-column-end: 4;
    
 }
-#item-18 {
-
+#card-18 {
    grid-row-start: 4;
    grid-column-start: 4;
 
@@ -181,8 +162,7 @@
    grid-column-end: 5;
    
 }
-#item-19 {
-
+#card-19 {
    grid-row-start: 4;
    grid-column-start: 5;
 

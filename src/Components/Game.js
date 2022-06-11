@@ -7,7 +7,7 @@ export const Game = () => {
 
     return (
         <div id="game">
-            {heroes.map((hero, index) => <div id={'item-' + index} key={'item-' + index}><Card /></div>)}
+            {heroes.map((hero, index) => <div id={'card-' + index} key={'card-' + index}><Card /></div>)}
         </div>
     );
 }
