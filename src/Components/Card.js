@@ -1,12 +1,14 @@
 import React from "react";
-import './Card.css';
+import './Card.scss';
 
-export const Card = ({playinCards}) => {
+export const Card = ({playinCards, hero}) => {
+
+
     return (
-        <div className="card">
+        <div className="Card">
             <div className="content">
                 <div className="front">
-                    {}
+                    {hero}
                 </div>
                 <div className="back">
                     Back!

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Game} from './Components/Game';
-import { PickYourCards } from './Components/PickYourCards';
+import { CardPicker } from './Components/CardPicker';
 import { Header } from './Components/Header';
 import './App.scss';
 
@@ -30,10 +30,9 @@ function App() {
         user={user}
         game={gameState} />
 
-      <div className='gameContainer'>
-        {gameState === 1 && (<PickYourCards onNextSubmit={handleChangeGameState} onCardClick={handleChoosingClick} playingCards={playingCards}/>)}
-        {gameState === 2 && (<Game/>)}
-      </div>
+      {gameState === 1 && (<CardPicker onNextSubmit={handleChangeGameState} onCardClick={handleChoosingClick} playingCards={playingCards}/>)}
+      {gameState === 2 && (<Game/>)}
+
 
     </main>
   );
