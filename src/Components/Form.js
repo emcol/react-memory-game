@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import './Form.scss';
 
-export const StartGamePage = ({onUserChange, onSubmit_game}) => {
+export const Form = ({onUserChange, onSubmit_game}) => {
 
     const [user, setUser] = useState('');
 

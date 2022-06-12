@@ -1,6 +1,14 @@
-li {
-    list-style: none;
-    &.card-item {
-        cursor: pointer;
+ul {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        list-style: none;
+
+        &.card-item {
+            cursor: pointer;
+        }
     }
 }
